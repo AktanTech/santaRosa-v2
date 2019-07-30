@@ -23,7 +23,7 @@ body{
 	font-size: 15px;
 	line-height: 1.7;
 	color: #c4c3ca;
-	background-color: #1f2029;
+	background-color: #808080;
 	overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6,
@@ -983,7 +983,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 	border-radius: 50%;
 	position: relative;
 	background: rgba(255, 255, 255, 1);
-	box-shadow: 0 0 0 0 rgba(255, 255, 255, 1) 
+	box-shadow: 0 0 0 0 rgba(255, 255, 255, 1) ;
 	left: 0;
 	top: -9px;
 	cursor: pointer;
