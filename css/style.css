@@ -23,7 +23,9 @@ body{
 	font-size: 15px;
 	line-height: 1.7;
 	color: #c4c3ca;
-	background-color: #808080;
+	/* background-color: #1f2029; */
+	background: url('../img/NuevaWeb/Imagenes/Fondos/Fondo_Vertical.jpg') no-repeat center center;
+	background-size: cover;
 	overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6,
@@ -428,7 +430,7 @@ a:hover {
 	font-size: 14vw;
 	line-height: 1;
 	color: rgba(200,200,200,.1);
-	background: linear-gradient(90deg, rgba(200,200,200,0), rgba(200,200,200,0.65));
+	background: linear-gradient(90deg, rgba(200,200,200,0.10), rgba(200,200,200,0.65));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-weight: 900;
