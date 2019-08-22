@@ -2131,6 +2131,9 @@ figure.vimeo a img, figure.youtube a img {
 
 /* #Contact
 ================================================== */
+form{
+	display: contents;
+}
 
 .ajax-form input,
 .ajax-form textarea{

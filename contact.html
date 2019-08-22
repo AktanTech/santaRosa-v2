@@ -7,24 +7,24 @@
 	<!-- Basic Page Needs
 	================================================== -->
 	<meta charset="utf-8">
-	<title>Euthenia</title>
-	<meta name="description"  content="Professional Creative Template" />
-	<meta name="author" content="IG Design">
-	<meta name="keywords"  content="ig design, website, design, html5, css3, jquery, creative, clean, animated, portfolio, blog, one-page, multi-page, corporate, business," />
-	<meta property="og:title" content="Professional Creative Template" />
+	<title>Santa Rosa</title>
+	<meta name="description"  content="Fabrica Santa Rosa" />
+	<meta name="author" content="Solo Dilo, Aktan Technology">
+	<meta name="keywords"  content="fábrica, website, poliestireno, vigueta, caseton, bovedilla, concreto, santa rosa, malla, masilla," />
+	<meta property="og:title" content="Fabrica Santa Rosa" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="" />
 	<meta property="og:image" content="" />
 	<meta property="og:image:width" content="470" />
 	<meta property="og:image:height" content="246" />
 	<meta property="og:site_name" content="" />
-	<meta property="og:description" content="Professional Creative Template" />
+	<meta property="og:description" content="Fabrica Santa Rosa" />
 	<meta name="twitter:card" content="" />
-	<meta name="twitter:site" content="https://twitter.com/IvanGrozdic" />
-	<meta name="twitter:domain" content="http://ivang-design.com/" />
-	<meta name="twitter:title" content="" />
+	<!-- <meta name="twitter:site" content="https://twitter.com/IvanGrozdic" /> -->
+	<!-- <meta name="twitter:domain" content="http://ivang-design.com/" /> -->
+	<!-- <meta name="twitter:title" content="" />
 	<meta name="twitter:description" content="Professional Creative Template" />
-	<meta name="twitter:image" content="http://ivang-design.com/" />
+	<meta name="twitter:image" content="http://ivang-design.com/" /> -->
 
 	<!-- Mobile Specific Metas
 	================================================== -->
@@ -45,10 +45,15 @@
 	<link rel="stylesheet" href="css/animsition.min.css"/>
 	<link rel="stylesheet" href="css/swiper.min.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/regular.min.css">
+	<link rel="stylesheet" href="css/solid.min.css">
 			
 	<!-- Favicons
 	================================================== -->
-	<link rel="icon" type="image/png" href="favicon.jpg">
+	<link rel="icon" type="image/png" href="./img/santarosaImg/Logo-Santa-Rosa-Azul-Bco.png">
 	<link rel="apple-touch-icon" href="apple-touch-icon.jpg">
 	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.jpg">
 	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.jpg">
@@ -132,55 +137,60 @@
 				<div class="row px-5 px-xl-2">
 					<div class="col-lg-9">
 						<div class="row ajax-form">
-							<div class="col-md-6">
-								<input class="hover-target" name="name" type="text" placeholder="Nombre: *" autocomplete="off"/>
-							</div>	
-							<div class="col-md-6 mt-4 mt-md-0">
-								<input class="hover-target" name="email" type="email" placeholder="E-Mail: *" autocomplete="off"/>
-							</div>	
-							<div class="col-md-6 mt-4">
-								<input class="hover-target" name="phone" type="tel" placeholder="Telefono:" autocomplete="off"/>
-							</div>	
-							<div class="col-md-6 mt-4">
-								<input class="hover-target" name="location" type="text" placeholder="Ciudad:" autocomplete="off"/>
-							</div>	
-							<!-- <div class="col-md-6 mt-4 hover-target">
-								<select name="budget" class="wide">
-									<option data-display="Budget">Budget</option>
-									<option value="1">$2000 - $5000</option>
-									<option value="2">$5000 - $10000</option>
-									<option value="3">$10000 - $25000</option>
-									<option value="4">$25000 - $50000</option>
-									<option value="5">$50000 and up</option>
-								</select>
-							</div>	 -->
-							<div class="col-md-6 mt-4 hover-target">
-								<select name="interested" class="wide">
-									<option data-display="Interesado en">Interesado en</option>
-									<option value="1">Viguetas de Concreto</option>
-									<option value="2">Viguetas de Poliestireno</option>
-									<option value="3">Bovedillas de Poliestireno</option>
-									<option value="4">Caseton de Poliestireno</option>
-									<option value="5">Mallas</option>
-									<option value="6">Masilla</option>
-									<option value="7">Otros</option>
-									<!-- <option value="4">Illustration</option>
-									<option value="5">Motion Graphics</option>
-									<option value="6">Graphic Design</option> -->
-								</select>
-							</div>	
-							<!-- <div class="col-md-6 mt-4">
-								<input class="hover-target" name="name" type="text" placeholder="Company Name:" autocomplete="off"/>
-							</div>	
-							<div class="col-md-6 mt-4">
-								<input class="hover-target" name="name" type="text" placeholder="Website:" autocomplete="off"/>
-							</div>	 -->
-							<div class="col-md-12 mt-4">
-								<textarea class="hover-target" name="message" placeholder="¿Como podemos ayudarte? *"></textarea>
-							</div>
-							<div class="col-md-12 mt-4">
-								<button class="hover-target" id="send" data-lang="en"><span>Enviar</span></button>
-							</div>
+							<form action="./php/submit.php" method="POST">
+								<div class="col-md-6">
+									<input class="hover-target" name="name" type="text" placeholder="Nombre: *" autocomplete="off"/>
+								</div>	
+								<div class="col-md-6 mt-4 mt-md-0">
+									<input class="hover-target" name="email" type="email" placeholder="E-Mail: *" autocomplete="off"/>
+								</div>	
+								<div class="col-md-6 mt-4">
+									<input class="hover-target" name="phone" type="tel" placeholder="Telefono:" autocomplete="off"/>
+								</div>	
+								<div class="col-md-6 mt-4">
+									<input class="hover-target" name="location" type="text" placeholder="Ciudad:" autocomplete="off"/>
+								</div>	
+								<!-- <div class="col-md-6 mt-4 hover-target">
+									<select name="budget" class="wide">
+										<option data-display="Budget">Budget</option>
+										<option value="1">$2000 - $5000</option>
+										<option value="2">$5000 - $10000</option>
+										<option value="3">$10000 - $25000</option>
+										<option value="4">$25000 - $50000</option>
+										<option value="5">$50000 and up</option>
+									</select>
+								</div>	 -->
+								<div class="col-md-6 mt-4 hover-target">
+									<select name="interested" class="wide">
+										<option data-display="Interesado en">Interesado en</option>
+										<option value="1">Viguetas de Concreto</option>
+										<option value="2">Viguetas de Poliestireno</option>
+										<option value="3">Bovedillas de Poliestireno</option>
+										<option value="4">Caseton de Poliestireno</option>
+										<option value="5">Mallas</option>
+										<option value="6">Masilla</option>
+										<option value="7">Otros</option>
+										<!-- <option value="4">Illustration</option>
+										<option value="5">Motion Graphics</option>
+										<option value="6">Graphic Design</option> -->
+									</select>
+								</div>	
+								<!-- <div class="col-md-6 mt-4">
+									<input class="hover-target" name="name" type="text" placeholder="Company Name:" autocomplete="off"/>
+								</div>	
+								<div class="col-md-6 mt-4">
+									<input class="hover-target" name="name" type="text" placeholder="Website:" autocomplete="off"/>
+								</div>	 -->
+								<div class="col-md-12 mt-4">
+									<textarea class="hover-target" name="message" placeholder="¿Como podemos ayudarte? *"></textarea>
+								</div>
+								<div class="col-md-6 mt-4">
+									<button class="hover-target" id="send" data-lang="en" type="submit"><span>Enviar</span></button>
+								</div>
+								<div class="col-md-6 mt-4">
+									<span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=O8rjcgCOg7l1h8YGlZVv5wIyrMnGk8QIkzc3N492tJ0cNCVlr8MVMzFNpBTq"></script></span>
+								</div>
+							</form>
 						</div>	
 					</div>
 					<div class="col-lg-3 mt-4 mt-lg-0">
@@ -198,6 +208,8 @@
 				</div>		
 			</div>				
 		</div>
+
+		
 
 		<div class="section over-hide z-bigger">
 			<!-- <div class="container">
@@ -235,14 +247,14 @@
 		================================================== -->
 		
 		<div class="social-fixed">
-				<a href="https://www.facebook.com/SantaRosaFabrica/" target="_blank" class="hover-target"><img src="./img/icons/facebook-logo-white.png" alt=""></a>
-				<a href="#" class="hover-target"><img src="./img/icons/whatsapp-white.png" alt=""></a>
-				<a href="https://www.instagram.com/santarosa.mx/" target="_blank" class="hover-target"><img src="./img/icons/instagram-logo-white.png" alt=""></a>
-				<a href="./media/SantaRosa Ed2 2019.pdf" class="hover-target" target="_blank"><img src="./img/icons/pdf-white.png" alt=""></a>
-				<!-- <a href="#" class="hover-target">gh</a> -->
-			</div>
+			<a href="https://www.facebook.com/SantaRosaFabrica/" class="hover-target" target="_blank"><img src="./img/icons/facebook-logo-white.png" alt=""></a>
+			<a href=" https://wa.me/5219993666907" class="hover-target" target="_blank"><img src="./img/icons/whatsapp-white.png" alt=""></a>
+			<!-- <a href="#" class="hover-target">be</a> -->
+			<a href="https://www.instagram.com/santarosa.mx" class="hover-target" target="_blank"><img src="./img/icons/instagram-logo-white.png" alt=""></a>
+			<a href="./media/SantaRosa Ed2 2019.pdf" class="hover-target" target="_blank"><img src="./img/icons/pdf-white.png" alt=""></a>
+		</div>
 		<div class="copyr">
-			2019 © Euthenia
+			2019 © Solo Dilo by Aktan
 		</div>
 		
 		<div class="scroll-to-top hover-target"></div>
@@ -255,7 +267,6 @@
         <div class='cursor3' id="cursor3"></div>		
 		
 	</div>
-
 	
 	<!-- JAVASCRIPT
     ================================================== -->
@@ -269,6 +280,8 @@
 			// var scrollHeight
 		})
 	</script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+
 <!-- End Document
 ================================================== -->
 </body>
