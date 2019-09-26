@@ -10,12 +10,47 @@ if (isset($_POST['name'])) {$name = $_POST['name'];}
 if (isset($_POST['email'])) {$from = $_POST['email'];}
 // if (isset($_POST['subject'])) {$subject = $_POST['subject'];}
 if (isset($_POST['phone'])) {$company = $_POST['phone'];}
-if (isset($_POST['location'])) {$message = $_POST['location'];}
+if (isset($_POST['location'])) {$location = $_POST['location'];}
+if (isset($_POST['message'])) {$message = $_POST['message'];}
 // if (isset($_POST['hade'])) {$hade = trim(stripcslashes($_POST['hade']));}
+if (isset($_POST['interested'])) {
+    $interest_value = $_POST['interested'];
+    switch ($interest_value) {
+        case '1':
+            $interest = "Viguetas de Concreto";
+            break;
 
+        case '2':
+            $interest = "Viguetas de Poliestireno";
+            break;
+
+        case '3':
+            $interest = "Bovedillas de Poliestireno";
+            break;
+
+        case '4':
+            $interest = "Caseton de Poliestireno";
+            break;
+
+        case '5':
+            $interest = "Mallas";
+            break;
+
+        case '6':
+            $interest = "Masilla";
+            break;
+
+         case '7':
+            $interest = "Otros";
+            break;
+        
+    }
+
+}
 // if($hade == ''){
 // Construct email body
-$body_message = 'Nombre de Cliente: ' . $name . "\r\n" . 'Email: ' . $from . "\r\n" . 'Telefono: ' . $company . "\r\n" . 'Message: ' . $message . "\r\n";
+$body_message = 'Nombre de Cliente: ' . $name . "\r\n" . 'Email: ' . $from . "\r\n" . 'Telefono: ' . $company . "\r\n" . 'Ciudad: ' . $location . "\r\n"
+. 'Interesado en: ' . $interest . "\r\n" . 'Mensaje: ' . $message . "\r\n";
 
 // Construct headers of the message
 $headers = 'MIME-Version: 1.0' . "\r\n";
